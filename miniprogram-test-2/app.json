@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Fate explorer",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#459ae9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/figure1.png",
+        "selectedIconPath": "pages/image/figure4.png",
+        "text": "英灵检索"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/figure2.png",
+        "selectedIconPath": "pages/image/figure5.png",
+        "text": "特征检索"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/image/figure3.png",
+        "selectedIconPath": "pages/image/figure6.png",
+        "text": "英灵全览"
+      }
+     
+    ]
+  }
+
+ 
+}
+
