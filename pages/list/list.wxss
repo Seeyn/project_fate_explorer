@@ -1,0 +1,21 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.item-view {
+  margin-bottom: 35rpx;
+}
+.date {
+  font-size: 24rpx;
+  text-align: right;
+  color: #999;
+}
+image {
+  width: 100%;
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+}

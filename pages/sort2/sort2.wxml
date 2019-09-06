@@ -1,0 +1,41 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">特征检索</view>
+        <view class="page__desc">根据相应的特征,搜索符合条件的英灵</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <picker bindchange="bindPickerChange0" value="{{index0}}" range="{{origin}}">
+                <button type="default">origin: {{origin[index0]}}</button>
+            </picker>
+            <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{region}}">
+                <button type="default">region: {{region[index1]}}</button>
+            </picker>
+            <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{class_c}}">
+                <button type="default">class: {{class_c[index2]}}</button>
+            </picker>
+            <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{alignment}}">
+                <button type="default">alignment: {{alignment[index3]}}</button>
+            </picker>
+
+            <button class="weui-btn" type="default" bindtap="modalinput_h">height:{{height_s}}~{{height_f}}</button>  
+            <button class="weui-btn" type="default" bindtap="modalinput_w">weight:{{weight_s}}~{{weight_f}}</button>  
+        </view>
+    </view>
+    <navigator url="../list/list?type=character&origin={{origin[index0]}}&region={{region[index1]}}&class={{class_c[index2]}}&alignment={{alignment[index3]}}&weight_down={{weight_s}}&weight_up={{weight_f}}&height_down={{height_s}}&height_up={{height_f}}" class="weui-cell" >
+    <button class="weui-btn mini-btn" type="default" size="mini">EXPLORE</button>
+    </navigator>
+        
+</view>
+<modal hidden="{{hiddenmodalput_h}}"bindcancel="cancel_h" bindconfirm="confirm_h" >  
+    <text class="section__title">最小值(值为-1则不设下限)</text>
+    <slider bindchange="sliderchange_h_s" min="-1" max="{{height_f}}" show-value />
+    <text class="section__title">最大值(值为200则不设上限)</text>
+     <slider bindchange="sliderchange_h_f" min="{{height_s}}" max="200" show-value />
+</modal>
+<modal hidden="{{hiddenmodalput_w}}"bindcancel="cancel_w" bindconfirm="confirm_w" >  
+    <text class="section__title">最小值(值为-1则不设下限)</text>
+    <slider bindchange="sliderchange_w_s" min="-1" max="{{weight_f}}" show-value />
+    <text class="section__title">最大值(值为200则不设上限)</text>
+     <slider bindchange="sliderchange_w_f" min="{{weight_s}}" max="200" show-value />
+</modal>

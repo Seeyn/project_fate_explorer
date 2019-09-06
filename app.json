@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sort1/sort1",
+    "pages/sort2/sort2",
+    "pages/list/list",
+    "pages/explorer/explorer",
+    "pages/post/post",
+    "pages/article/article",
+    "pages/article_list/article_list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Fate explorer",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#459ae9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/figure7.png",
+        "selectedIconPath": "img/figure7.png",
+        "text": "首页"
+      },
+      {  "pagePath": "pages/sort1/sort1",
+        "iconPath": "img/figure1.png",
+        "selectedIconPath": "img/figure4.png",
+        "text": "英灵检索"
+      },
+      {
+        "pagePath": "pages/sort2/sort2",
+        "iconPath": "img/figure2.png",
+        "selectedIconPath": "img/figure5.png",
+        "text": "特征检索"
+      } 
+    ]
+     
+    
+  }
+
+ 
+}
+

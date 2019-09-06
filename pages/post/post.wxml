@@ -1,0 +1,120 @@
+<!--pages/post/post.wxml-->
+   <template name="list-item">
+
+
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+               
+                    
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">誓约故事{{title}}</view>
+                         <text> {{name}} </text>
+                    </view>
+              
+            </view>
+        </view>
+   
+</template>
+
+
+
+    <image  mode="aspectFit" src="{{full_picture}}"></image>
+
+
+<view class="bg">
+<view class="placeholder">
+英灵姓名:{{servent_name}}
+</view>
+<view class="placeholder">
+英灵姓名(日):{{servent_name_japanese}}
+</view>
+<view class="placeholder">
+英灵姓名(英):{{servent_name_english}}
+</view>
+</view>
+
+<view class="bg_1">
+<view class="placeholder">
+地域:{{region}}
+</view>
+<view class="placeholder">
+起源:{{origin}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+性别:{{gender}}
+</view>
+<view class="placeholder">
+class:{{class_us}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+身高:{{height}}
+</view>
+<view class="placeholder">
+体重:{{weight}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+筋力:{{strength}}
+</view>
+<view class="placeholder">
+耐久:{{endurance}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+敏捷:{{agility}}
+</view>
+<view class="placeholder">
+魔力:{{ mana}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+幸运:{{luck}}
+</view>
+<view class="placeholder">
+宝具:{{noble_phantasm}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+画师:{{illustrator}}
+</view>
+<view class="placeholder">
+声优:{{voice_actor}}
+</view>
+</view>
+<view class="bg_1">
+<view class="placeholder">
+原型:{{prototype}}
+</view>
+<view class="placeholder">
+阵营:{{alignment}}
+</view>
+</view>
+<view class="bg">
+ <template is="list-item" wx:for="{{bond_text}}" data="{{...bond_text[index],...{title:item.index, name: item} }}"></template>
+
+</view>
+<view class="bg">
+<view class="placeholder">
+{{craft_name}}
+</view>
+
+<image  mode="aspectFit" src="{{craft_src}}"></image>     
+                
+                    <view class="content">
+                       {{craft_description}}
+                    </view>
+</view>
+<navigator  class="bg" url="../explorer/explorer?region={{region}}&origin={{origin}}&prototype={{prototype}}&servent_id={{servent_id}}">
+  <button class="weui-btn mini-btn" type="default" size="mini">EXPLORE</button>
+  </navigator>
+
+  
+  

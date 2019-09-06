@@ -1,0 +1,20 @@
+ 
+ <template name="article_list-item">
+   <view class="weui-panel__bd">
+   <view class="weui-panel weui-panel_access">
+                <view class="weui-media-box weui-media-box_text">
+                <navigator url="../article/article?title={{title}}&message={{message}}">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{title}}</view>
+                   
+                  </navigator>
+                </view>
+                        </view>
+                        </view>
+</template>
+ <view class="weui-panel__hd">文章列表</view>
+          
+ <template is="article_list-item" wx:for="{{article}}" data="{{...article[index],...{title: item.article_title,message: item.article_content} }}"></template>
+                  
+                
+    
+       

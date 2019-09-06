@@ -1,0 +1,16 @@
+<view class="page">
+
+​    <view class="page__hd">
+
+​        <view class="page__title">explore</view>
+
+​        <view class="page__desc">to explore more information!!!</view>
+
+​            <button type="default" bindtap="open1">相关人物</button>
+            <button type="default" bindtap="open2">出处书籍</button>
+            <button type="default" bindtap="open3">文章一览</button>
+​  
+
+​    </view>
+
+</view>

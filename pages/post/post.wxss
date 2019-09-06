@@ -1,0 +1,47 @@
+/* pages/post/post.wxss */
+page{
+  background-color: rgb(255, 255, 255);
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+}
+.bg_1{
+   display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.content{
+  font-family:'Times New Roman', Times, serif;
+  font-size: small;
+  color:#1b1515;
+}
+.placeholder{
+    margin: 1px;
+    padding: 0 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #141313;
+    font-family:'Times New Roman', Times, serif;
+    border-bottom: 1px solid gray;
+   
+
+}
+.exp{
+  border:1px solid #405f80;
+  width: 30%;
+  margin-left: 35%;
+  height: 6%;
+  margin-top: 94%;
+  border-radius: 5px;
+  text-align: center;
+}
+.ex{
+  font-size: 44rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #405f80;
+}
+

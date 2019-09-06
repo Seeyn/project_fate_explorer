@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Welcome to fate explorer',
-    imageSrc:'../image/welcome.jpg',
+    imageSrc:'/img/welcome.jpg',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

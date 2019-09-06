@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Article</view>
+        <view class="page__desc">文章</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">{{title}}</view>
+            
+               
+                <view class="weui-article__section">
+                    
+                    <view class="weui-article__p">
+                        {{message}}
+                    </view>
+                    
+                </view>
+               
+        </view>
+    </view>
+</view>

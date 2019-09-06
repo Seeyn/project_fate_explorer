@@ -1,0 +1,35 @@
+<template name="list-item">
+   <view class="weui-panel__bd">
+                <view class="weui-panel weui-panel_access">
+                <view class="weui-media-box weui-media-box_text">
+                <navigator url="../post/post?id={{id}}">
+                  <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{image}}" />
+                    </view>
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{title}}</view>
+                    
+                  </navigator>
+                </view>
+                </view>
+                        </view>
+  
+</template>
+<view class="weui-panel__hd">英灵列表</view>
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore" lower-threshold="100">
+   
+    <template is="list-item" wx:for="{{array}}" wx:if="{{index<page*10}}" data="{{...array[index],...{title: item.servent_name, image: item.servent_profile_pic} }}"></template>
+    
+   <!--<template is="loadindFooter" data="{{hideFooter}}"/>-->
+</scroll-view>
+<view  class="bg" id="tapTest" data-hi="WeChat" bindtap="loadMore">
+<button class="weui-btn mini-btn" type="default" size="mini">{{text}}</button>
+</view>
+<!--
+<loading hidden="{{loadingHide}}">
+    加载中...
+</loading>
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="unique">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>>
